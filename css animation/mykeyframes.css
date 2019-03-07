@@ -1,0 +1,61 @@
+body{
+    background-color: #333
+}
+
+.mainCont{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.box1{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    float: left;
+    background-color: lightgreen;
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+
+.box2{
+    
+    position: relative;
+    width: 450px;
+    height: 450px;
+    float: left;
+    background-color: lightsalmon;
+    animation-name: box2;
+    animation-duration: 2s;
+    /* animation-direction: alternate-reverse; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out
+}
+
+
+@keyframes box1{
+    0% {left: 0; border-radius:25% 0 0 0}
+    25% {border-radius:50% 50% 0 0}
+    75% {border-radius:75% 75% 75% 0}
+    100% {left: 450px; border-radius:100% 100% 100% 0}
+}
+
+@keyframes box2{
+    0% {right: 0; border-radius:0 25% 0 0}
+    25% {border-radius:0 0 50% 50%}
+    75% {border-radius:50% 50% 0 50%}
+    100% {right: 450px; border-radius:100% 100% 0 100%}
+}
+
+

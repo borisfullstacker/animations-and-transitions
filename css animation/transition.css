@@ -1,0 +1,25 @@
+body{
+    background: #333
+}
+
+.box{
+    background:white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    top: 200px;
+    transition-property: background, border-radius, transform;
+    /* you can trat transiton property seperatly as shown below */
+    transition-duration: 1s, 3s;
+    /* transition-delay: 2s; */
+    transition-timing-function: ease-in
+
+}
+
+
+.box:hover{
+ background: red;
+ border-radius: 50%;
+ transform:rotateY(180deg)
+}

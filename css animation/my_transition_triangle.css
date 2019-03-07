@@ -1,0 +1,56 @@
+body{
+    background-color: #333;
+}
+
+
+.triangle{
+    position: absolute;
+    margin: 0 auto;
+   top:0;
+    width: 0;
+    height: 0;
+    border-top: 300px solid white;    
+    border-left: 300px solid white;
+    border-right: 300px solid white;
+    border-bottom: 300px solid white;
+    transition-property: border-left-color, border-right-color, border-bottom-color;
+    transition-duration: 1s, 3s, 2s;
+    z-index: 2000;
+}
+
+
+.triangle:hover{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+}
+
+.text{
+    margin: 0 auto;
+    position: relative;
+    top:200px;
+    width: 600px;
+    height: 600px;
+}
+
+.text>h1{
+    position: relative;
+    width: fit-content;
+    top: 300px;
+    margin: 0 auto;
+    animation-name: text;
+    animation-duration: 3s;
+    color: transparent;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  
+
+}
+
+@keyframes text{
+    0%{color: transparent}
+    100%{color: white}
+}
+
+
